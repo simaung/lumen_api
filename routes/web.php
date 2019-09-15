@@ -19,3 +19,6 @@ $router->get('/', function () use ($router) {
 $router->get('/key', function() {
     return str_random(32);
 });
+
+$router->post('/register', 'AuthController@register');
+$router->post('/login', 'AuthController@login');
